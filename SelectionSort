@@ -1,0 +1,14 @@
+public int SelectionSort(int[] a, int n){                  //Function Signature: FunctionName, InputParameter(s), ReturnValue
+      int global = 0;                                      //Declare an index of global minimum field --> global
+      int temp = 0;                                        //Declare a temporary field --> temp
+      for(int i = 0; i < a.length -1; i++){                //Outter Loop: used to counter how many interations are
+            global = i;                                        
+            for(int j = i + 1; j < a.length; j++){         //Inner Loop: Find the global min from the rest of array
+                  if(a[j] < a[global]){                    //Record the index of the smallest element in the array
+                        global = j;
+                  }
+      }
+      temp = a[i];
+      a[i] = a[global];
+      a[global] = temp;
+}
