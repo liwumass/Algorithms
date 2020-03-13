@@ -1,14 +1,33 @@
-public int SelectionSort(int[] a, int n){                  //Function Signature: FunctionName, InputParameter(s), ReturnValue
-      int global = 0;                                      //Declare an index of global minimum field --> global
-      int temp = 0;                                        //Declare a temporary field --> temp
-      for(int i = 0; i < a.length -1; i++){                //Outter Loop: used to counter how many interations are
-            global = i;                                        
-            for(int j = i + 1; j < a.length; j++){         //Inner Loop: Find the global min from the rest of array
-                  if(a[j] < a[global]){                    //Record the index of the smallest element in the array
-                        global = j;
-                  }
-      }
-      temp = a[i];
-      a[i] = a[global];
-      a[global] = temp;
+public class selectionSort {                         //Pay attention to Function Signature: FunctionName, InputParameter(s), ReturnValue
+    void sort(int[] a) {                             //Method'sort'
+        int global = 0;                              //Declare an index of global minimum field --> global
+        int temp = 0;                                //Declare a temporary field --> temp
+        int n = a.length;
+        for (int i = 0; i < n - 1; i++) {            //Outter Loop: used to counter how many interations are
+            global = i;
+            for (int j = i + 1; j < n; j++) {        //Inner Loop: Find the global min from the rest of array
+                if (a[j] < a[global]) {              //Record the index of the smallest element in the array
+                    global = j;
+                }
+            }
+            temp = a[i];                             //Field 'temp' is used to store temporary smallest
+            a[i] = a[global];                        //In each iteration, 'a[i]' is assigned to the smallest value
+            a[global] = temp;                        //'a[global]' is used to store the smallest value
+        }
+    }
+
+    void printArray(int[] a) {                        //Method 'printArray'
+        for (int i = 0; i < n; i++) {                 //Print 'a[i]' in each step in n iterations
+            System.out.print(a[i] + " ");             //Output is 'a[i] ' in each iteration
+        }
+        System.out.println();                         //Output is null
+    }
+
+    public static void main(String[] args) {         //Method 'Main' is used as testing function
+        selectionSort ob = new selectionSort();      //Instance 'ob'
+        int[] a = { 1, 56, 97, 3, 6, 9, -1 };        //Initialize array a[]
+        ob.sort(a);                                  //Call method 'sort()' to sort input array; input is array a
+        System.out.println("Sorted Array");          //Output: "Sorted Array"
+        ob.printArray(a);                            //Call method "printArray" to print out sorted array
+    }
 }
