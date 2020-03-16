@@ -3,3 +3,37 @@
 // The way to analyze Time Complexity/Space Complexity is to use recursion tree.
 // Implementation in Java.
 
+public class BinarySearchClassic {
+    public int binarySearch(int[] a, int target) {
+        if (a == null) {
+            return -1;
+        }
+        int left = 0;
+        int right = a.length - 1;
+        while (left <= right) {
+            int middle = left + (right - left) / 2;
+            if (a[middle] == target) {
+                return middle;
+            }
+            if (a[middle] > target) {
+                right = middle - 1;
+            }
+            if (a[middle] < target) {
+                left = middle + 1;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        BinarySearchClassic ob = new BinarySearchClassic();
+        int[] a = { -1, 2, 3, 5, 7, 9 };
+        int n = a.length;
+        int target = 7;
+        int result = ob.binarySearch(a, target);
+        if (result == -1) {
+            System.out.println("Element not present");
+        }
+        else {
+            System.out.println("Element found at index " + result);
+        }
