@@ -1,8 +1,13 @@
 // Quick Sort is a divide-and-conquer algorithm. Usually, an element is taken as pivot to do sorting.
-// Pivot could be the first element / last element / median / random element.
+// Pivot could be the first element / last element / median / random element in an array.
 // For instance, there are two indices i and j divide an array into three parts.
 // The left part of the array is [0, ..., i) contains all the elements that are less than pivot.
 // The middle part of the array is [i, j) contains all the elements that are unknown.
 // The right part of the array is [j, ..., n-1) contains all the elements that are greater than pivot.
 // Put the values that are less than the pivot on the left of pivot. Put the values that are greater than the pivot to the right of the pivot.
+// Partition Algorithm is adopted to implemnt Quick Sort. 
+// Step 1: Start from the leftmost element and keep track of index i. If (a[i]<current element), swap current element with a[i].
+// Step 2: Choose the rightmost element as pivot, because there are three divided regions in the array: [a[0],a[i]), [a[i],a[j]), [a[j],a[n-1])
 
+//Implementation of QuickSort in Java.
+public class quickSort{
