@@ -9,7 +9,7 @@
 // Step 1: Start from the leftmost element and keep track of index i. If (a[i]<current element), swap current element with a[i].
 // Step 2: Choose the rightmost element as pivot, because there are three divided regions in the array: [a[0],a[i]), [a[i],a[j]), [a[j],a[n-1])
 
-//Implementation of QuickSort in Java.
+//Implementation (recursion) of QuickSort in Java.
 public class quickSort {
     /* Partition Algorithm */
     public int partition(int[] a, int left, int right) {
