@@ -3,7 +3,7 @@
 
 public class mergeSort {
     //Merge two subarrays of int[] a
-    //Method 'merge()'. Input an array a; two indeices of array a: left and right
+    //Method 'merge()'. Input an array a; three indeices of array a: left, middle and right
     public void merge(int[] a, int left, int middle, int right) {
         //Calculate the sizes of two subarrays
         int n1 = middle - left + 1;
