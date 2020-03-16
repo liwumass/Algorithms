@@ -1,0 +1,7 @@
+// Quick Sort is a divide-and-conquer algorithm. Usually, an element is taken as pivot to do sorting.
+// Pivot could be the first element / last element / median / random element.
+// For instance, there are two indices i and j divide an array into three parts.
+// The left part of the array is [0, ..., i) contains all the elements that are less than pivot.
+// The middle part of the array is [i, j) contains all the elements that are unknown.
+// The right part of the array is [j, ..., n-1) contains all the elements that are greater than pivot.
+
