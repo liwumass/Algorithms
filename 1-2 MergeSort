@@ -8,7 +8,7 @@ public class mergeSort {
         //Calculate the sizes of two subarrays
         int n1 = middle - left + 1;
         int n2 = right - middle - 1 + 1;
-        //Create two new temporary arrays to store the two subarrays
+        //Create two new temporary arrays to store the two subarrays. Extra memory used is O(n).
         int[] leftPart = new int[n1];
         int[] rightPart = new int[n2];
         //Seperately copy each element to corresponding subarrays
