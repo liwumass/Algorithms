@@ -17,6 +17,7 @@ public class selectionSort {                         //Pay attention to Function
     }
 
     void printArray(int[] a) {                        //Method 'printArray'
+        int n = a.length;
         for (int i = 0; i < n; i++) {                 //Print 'a[i]' in each step in n iterations
             System.out.print(a[i] + " ");             //Output is 'a[i] ' in each iteration
         }
