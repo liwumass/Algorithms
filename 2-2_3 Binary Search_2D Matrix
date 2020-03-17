@@ -1,0 +1,26 @@
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        if(matrix.length == 0 || matrix[0].length == 0){
+            return false;
+        }
+        int m = matrix.length;    // The number of rows in the matrix.
+        int n = matrix[0].length;  // The number of columns in the matrix.
+        int left = 0;
+        int right = m * n -1;         // The size of array transformed from a m*n matrix.
+        while (left <= right){
+           int middle = left + (right - left) / 2;       // The middle index of an array.
+           int r = middle / n;     // The index of the row in a matrix.
+           int c = middle % n;     // The index of the column in a matrix.
+           if(matrix[r][c] == target){
+               return true;
+           }
+           if(matrix[r][c] < target){
+               left = middle + 1;
+           }
+           if(matrix[r][c] > target){
+               right = middle - 1;
+           }
+        }
+        return false;
+    }
+}
