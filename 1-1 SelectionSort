@@ -1,7 +1,7 @@
 public class selectionSort {                         //Pay attention to Function Signature: FunctionName, InputParameter(s), ReturnValue
     void sort(int[] a) {                             //Method'sort'
         int global = 0;                              //Declare an index of global minimum field --> global
-        int temp = 0;                                //Declare a temporary field --> temp
+        int temp = 0;                                //Declare a temporary field to store global minimum --> temp
         int n = a.length;
         for (int i = 0; i < n - 1; i++) {            //Outter Loop: used to counter how many interations are
             global = i;
