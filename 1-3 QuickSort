@@ -24,7 +24,7 @@ public class quickSort {
                 a[j] = temp;
             }
         }
-        // swap the value of a[i+1] and a[high]
+        // swap the value of a[i+1] and a[right]
         int temp = a[i + 1];  // assign the value of temp to a[i + 1]
         a[i + 1] = a[right];  // assign the value of a[i+1] to a[right]/pivot
         a[right] = temp;      // assign the value of a[right]/pivot to temp/a[i+1]
