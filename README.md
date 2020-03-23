@@ -1,5 +1,5 @@
 # Algorithms
-Algorithms & Data Structures
+## Algorithms & Data Structures
 - Array
   - 1-1. Selection Sort
   - 1-2. Merge Sort
