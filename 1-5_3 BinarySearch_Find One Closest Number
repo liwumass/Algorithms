@@ -1,0 +1,9 @@
+// Binary Search
+// Problem: How to find an element that is closest to given target number in an array?
+// Function Signature: closestNumber(); input parameters: int[] a, int target; return the value of the element in given array.
+// Step1: Evaluate if the array is null. If null, return null. If not null, go ahead.
+// Step2: Evaluate if there is only one element in given array. If true, return a[0].
+// Step3: Create new fields: indices --- left, right, middle
+// Step4: While-loop: while(left <= right), do comparison and reset the value of three indices --- left, right and middle.
+// Step5: Post-Processing: compare a[left] and a[right]. Return to corresponding index that the value is closer to target.
+
