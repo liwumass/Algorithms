@@ -6,7 +6,10 @@
   - 1-3. Quick Sort
   - 1-4. Recursion 
   - 1-5. Binary Search
-- Linked List
+
 - Queue
+
 - Stack
+
+- Linked List
 
