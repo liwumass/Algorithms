@@ -1,3 +1,8 @@
+// SelectionSort
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
+
+
 public class selectionSort {                         //Pay attention to Function Signature: FunctionName, InputParameter(s), ReturnValue
     void sort(int[] a) {                             //Method'sort'
         int global = 0;                              //Declare an index of global minimum field --> global
