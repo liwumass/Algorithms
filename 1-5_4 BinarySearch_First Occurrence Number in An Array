@@ -3,3 +3,60 @@
 // Time Complexity: O(log(n))
 // Space Complexity: O(1)
 
+public class BinarySearchFirstOccurrenceElement {
+    public int firstOcc(int[] a, int target) {
+        if (a == null) {
+            return -1;
+        }
+        if (a.length == 1) {
+            return 0;
+        }
+        if (a.length == 2) {
+            if (a[0] == target) {
+                return 0;
+            }
+            if (a[0] != target && a[1] == target) {
+                return 1;
+            }
+            else {
+                return -1;
+            }
+        }
+
+        int left = 0;
+        int right = a.length - 1;
+        while (left < right) {
+            int middle = left + (right - left) / 2;
+            if (a[middle] == target) {
+                return middle;
+            }
+            if (a[middle] < target) {
+                left = middle;
+            }
+            if (a[middle] > target) {
+                right = middle;
+            }
+        }
+
+        if (a[left] == target) {
+            return left;
+        }
+        if (a[right] == target) {
+            return right;
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        BinarySearchFirstOccurrenceElement ob = new BinarySearchFirstOccurrenceElement();
+        int[] a = { 1, 2, 3, 4, 5, 5, 5, 6, 7 };
+        int target = 5;
+        int result = ob.firstOcc(a, target);
+        if (result == -1) {
+            System.out.println("Element not present");
+        }
+        else {
+            System.out.println("Element presents at index " + result);
+        }
+    }
+}
