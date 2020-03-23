@@ -1,5 +1,7 @@
-//MergeSort is a divide-and-conquer algorithm
-//Using a recursive way to implement MergeSort in Java
+// MergeSort is a divide-and-conquer algorithm
+// Using a recursive way to implement MergeSort in Java
+// Time Complexity: O(n*log(n))
+// Space Complexity: O(n), because we created two new subarrays to store two temporary subarrays.
 
 public class mergeSort {
     //Merge two subarrays of int[] a
