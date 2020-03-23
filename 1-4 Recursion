@@ -1,8 +1,13 @@
 // Recursion: a function calls itself.
-// Boll down a big problem to small problems that could be solved using same logic.
+// Boll down to a big problem to the smallest problems that could be solved using same logic.
 // Implementation in Java: Base Case & Recursion Rule.
 // Base Case: the smallest problem is called Base Case.
 // Recursion Rule: the rule makes original problem smaller to smallest.
+// Time Complexity: The time cost when all the nodes are processed. for a n-layer tree: O(2^n).
+// For a Binary Tree, the number of all leaf-nodes in the last layer of the tree is larger than the number of the sum of rest nodes. 
+// For Time Complexity calculation, we only care the number of nodes in the last layer.
+// Space Complexity: extra memory used is O(n). DFS & Von Neumann Instructions.
+// Breaking point: after every return in the function, check breaking point.
 
 // Fibonacci Sequence. (1) Base Case: F(0) = 0; F(1) = 1; (2) Recursion Rule: F(n) = F(n-1) + F(n-2).
 public class Fibonacci {
