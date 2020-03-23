@@ -6,6 +6,8 @@
 // Step3: Create new fields: indices --- left, right, middle
 // Step4: While-loop: while(left <= right), do comparison and reset the value of three indices --- left, right and middle.
 // Step5: Post-Processing: compare a[left] and a[right]. Return to corresponding index that the value is closer to target.
+// Time Complexity: O(log(n)).
+// Space Complexity: O(1).
 
 public class BinarySearchFindClosestNumber {
     public int findClosest(int[] a, int target) {
