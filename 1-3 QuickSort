@@ -7,7 +7,9 @@
 // Put the values that are less than the pivot on the left of pivot. Put the values that are greater than the pivot to the right of the pivot.
 // Partition Algorithm is adopted to implemnt Quick Sort. 
 // Step 1: Start from the leftmost element and keep track of index i. If (a[i]<current element), swap current element with a[i].
-// Step 2: Choose the rightmost element as pivot, because there are three divided regions in the array: [a[0],a[i]), [a[i],a[j]), [a[j],a[n-1])
+// Step 2: Choose the rightmost element as pivot. There are three divided regions in the array: [a[0],a[i]), [a[i],a[j]), [a[j],a[n-1])
+// Time Complexity: O(n^2)
+// Space Complexity: No extra space required.
 
 //Implementation (recursion) of QuickSort in Java.
 public class quickSort {
@@ -49,7 +51,7 @@ public class quickSort {
         System.out.println();
     }
 
-    /* Main method to text program. */
+    /* Main method to test program. */
     public static void main(String[] args) {
         int[] a = { 9, 6, 20, -8, 35, 7 };
         int n = a.length;
