@@ -1,6 +1,8 @@
 // Binary Search: also known as half-interval search/logarithm search, is a search algorithm that finds target value in a sorted array or elements share same attributes in an array.
 // In each step, make sure the given up part does not contain target value.
 // The way to analyze Time Complexity/Space Complexity is to use recursion tree.
+// Time Complexity: O(log(n)) if a.length = n.
+// Space Complexity: O(1).
 // Implementation in Java.
 
 public class BinarySearchClassic {
