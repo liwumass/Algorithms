@@ -7,3 +7,48 @@
 // Step4: While-loop: while(left <= right), do comparison and reset the value of three indices --- left, right and middle.
 // Step5: Post-Processing: compare a[left] and a[right]. Return to corresponding index that the value is closer to target.
 
+public class BinarySearchFindClosestNumber {
+    public int findClosest(int[] a, int target) {
+        if (a == null) {
+            return -1;
+        }
+        if (a.length == 1) {
+            return 0;
+        }
+        int left = 0;
+        int right = a.length - 1;
+        while (left <= right) {
+            int middle = left + (right - left) / 2;
+            if (a[middle] == target) {
+                return target;
+            }
+            if (a[middle] < target) {
+                left = middle + 1;
+            }
+            if (a[middle] > target) {
+                right = middle - 1;
+            }
+        }
+        if ((Math.abs(a[left] - target)) < (Math.abs(a[right] - target))) {
+            return left;
+        }
+        else {
+            return right;
+        }
+    }
+
+    public static void main(String[] args) {
+        BinarySearchFindClosestNumber ob = new BinarySearchFindClosestNumber();
+        int[] a = { 1, 2, 3, 4, 7, 8, 9 };
+        int n = a.length;
+        int target = 5;
+        int result = ob.findClosest(a, target);
+        if (result == -1) {
+            System.out.println("Element not present");
+        }
+        else {
+            System.out.println("Element found at index " + result);
+        }
+
+    }
+}
