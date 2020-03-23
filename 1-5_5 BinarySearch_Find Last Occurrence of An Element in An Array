@@ -1,0 +1,66 @@
+// Binary Search
+// How to find the last occurrence of an element (== target) in given array.
+// Time Complexity: O(log(n)).
+// Space Complexity: O(1).
+
+public class BinarySearchFindLastOccurrenceElement {
+    public int lastOcc(int[] a, int target) {
+        if (a == null) {
+            return -1;
+        }
+        if (a.length == 1) {
+            if (a[0] == target) {
+                return 0;
+            }
+            else {
+                return -1;
+            }
+        }
+        if (a.length == 2) {
+            if (a[0] == target) {
+                return 0;
+            }
+            if (a[0] != target && a[1] == target) {
+                return 1;
+            }
+            else {
+                return -1;
+            }
+        }
+
+        int left = 0;
+        int right = a.length - 1;
+        while (left < right) {
+            int middle = left + (right - left) / 2;
+            if (a[middle] == target) {
+                left = middle;
+            }
+            if (a[middle] < target) {
+                left = middle + 1;
+            }
+            if (a[middle] > target) {
+                right = middle - 1;
+            }
+        }
+        if (a[right] == target) {
+            return right;
+        }
+        if (a[left] == target) {
+            return left;
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        BinarySearchFindLastOccurrenceElement ob = new BinarySearchFindLastOccurrenceElement();
+        int[] a = { 0, 1, 2, 3, 7, 7, 7, 9, 10 };
+        int target = 7;
+        int result = ob.lastOcc(a, target);
+        if (result == -1) {
+            System.out.println("Element not present");
+        }
+        else {
+            System.out.println("Element presents at index " + result);
+        }
+    }
+}
