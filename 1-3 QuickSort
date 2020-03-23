@@ -9,7 +9,7 @@
 // Step 1: Start from the leftmost element and keep track of index i. If (a[i]<current element), swap current element with a[i].
 // Step 2: Choose the rightmost element as pivot. There are three divided regions in the array: [a[0],a[i]), [a[i],a[j]), [a[j],a[n-1])
 // Time Complexity: O(n^2)
-// Space Complexity: No extra space required.
+// Space Complexity: O(1). No extra space required.
 
 //Implementation (recursion) of QuickSort in Java.
 public class quickSort {
