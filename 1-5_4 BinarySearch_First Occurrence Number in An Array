@@ -1,0 +1,5 @@
+// Binary Search.
+// Problem: Return the index of the first occurence of an element in a given array. The element == target. 
+// Time Complexity: O(log(n))
+// Space Complexity: O(1)
+
