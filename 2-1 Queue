@@ -1,0 +1,10 @@
+// Queue: a logical concept. 
+// Queue could be implemented by using array, stack, LinkedList, etc.
+// Java Reference: 
+// Two essential elements in a queue: head and tail.
+// FIFO: fist in, first out.
+// Enqueue
+// Dequeue
+// Usages: Breadth-First Search (BFS) related problems.
+// Problem-1: Sliding Window. - Fixed-size window. / Unfixed-size window.
+// Problme-2: Tree prinntout by level. (BFS) - A searching algorithm.
