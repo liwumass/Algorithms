@@ -1,2 +1,2 @@
 // LinkedList: LinkedList is an abstract linear data structure. Each ListNode contains name, value and reference to next node.
-// 
+// In a LinkedList, remember to always be aware where the head is to make sure we can traverse any node/element in the list by iterating the 'next' reference.
