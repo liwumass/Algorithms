@@ -8,8 +8,12 @@
   - 1-5. Binary Search
 
 - Queue
+  - 2-1 Queue
 
 - Stack
+  - 3-1 Stack
 
 - Linked List
+  - 4-1 Linked List
+
 
