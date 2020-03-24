@@ -3,14 +3,15 @@
 // Usages: mainly in three problems.
 // All operations available in stack: push(), pop(), top().
 // Stack Implementation: array, vector.
+
 // Problem-1: How to implement a queue by using two stacks? (queue.size == n)
 // Solution: LIFO -> FIFO.
 // Step1: push all the elements into the first stack.
 // Step2: pop all the elements in the first stack and push them into the second stack.
 // Time Complexity: pop(), push().
-// Time Complexity of pop()
-// Time Complexity of push()
+// Time Complexity of push(): O(1)
+// Time Complexity of pop(): O(1) <-- Amortized Time Complexity Analysi
+// Space Complexity: O(n)
 
+// Problem-2: How to implement the min() function when using stack with Time Complexity = O(1)?
 
-
-// Space Complexity:
