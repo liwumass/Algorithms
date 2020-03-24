@@ -1,0 +1,4 @@
+// Binary Search
+// Binary Search could be used in both sorted array and array that contains elments with same attribute.
+// Problem: How to determine if a word is in a given sorted dictionary with unknown size.
+// 
