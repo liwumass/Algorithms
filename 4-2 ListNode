@@ -1,1 +1,13 @@
+// Class ListNode
+
+public class ListNode {
+    public int value;            // Any data type.
+    public ListNode next;
+    // public ListNode previous; // used in double LinkedList
+
+    public ListNode(int value) {
+        this.value = value;
+        this.next = null;
+    }
+}
 
