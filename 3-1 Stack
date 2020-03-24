@@ -1,0 +1,16 @@
+// Stack: a logical concept. (like a box or bottom-sealed container).
+// LIFO in stack: last in, first out.
+// Usages: mainly in three problems.
+// All operations available in stack: push(), pop(), top().
+// Stack Implementation: array, vector.
+// Problem-1: How to implement a queue by using two stacks? (queue.size == n)
+// Solution: LIFO -> FIFO.
+// Step1: push all the elements into the first stack.
+// Step2: pop all the elements in the first stack and push them into the second stack.
+// Time Complexity: pop(), push().
+// Time Complexity of pop()
+// Time Complexity of push()
+
+
+
+// Space Complexity:
