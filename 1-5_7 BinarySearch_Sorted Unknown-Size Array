@@ -1,4 +1,12 @@
 // Binary Search
-// Binary Search could be used in both sorted array and array that contains elments with same attribute.
+// In binary search, there are always three indices: left, right and middle. 
+// In each search step, give up half of corresponding array to decrease the size of array to be half of the array in previous step.
+// In each giving up, make sure target is NOT in the given up part.
+// Sometimes, several methods are encapsulated in one class to implement binary search in Java.
+// Binary Search could be used in both sorted array and array that contains elements with same attribute.
+
 // Problem: How to determine if a word is in a given sorted dictionary with unknown size.
-// 
+// Solution: In this problem, when we are going to use binary search, be clear both the index right and the index middle are unknown as a result of unknown-size dictionary.
+// Step1: create a new field: index left --- as the beginning jumping point.
+// Step2: Jump in a step of 2-element or 10-element. At the same time, evaluate if the target is missed.
+// Step3: If jump out of boundary, go back by using binary search to get the index of element that is equal to target.
