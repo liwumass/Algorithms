@@ -7,11 +7,19 @@
 // Problem-1: How to implement a queue by using two stacks? (queue.size == n)
 // Solution: LIFO -> FIFO.
 // Step1: push all the elements into the first stack.
-// Step2: pop all the elements in the first stack and push them into the second stack.
+// Step2: Evaluate if stack2 is empty. If stack2 is empty, move all the elments from stack1 to stack2.
+// Step2: If stack2 is not empty, call pop().
+// Step2: pop all the elements from the first stack and push them into the second stack.
+// Step3: Do pop() on the top element in the second stack.
+
 // Time Complexity: pop(), push().
-// Time Complexity of push(): O(1)
+// Time Complexity of push(): O(n)
 // Time Complexity of pop(): O(1) <-- Amortized Time Complexity Analysi
 // Space Complexity: O(n)
 
-// Problem-2: How to implement the min() function when using stack with Time Complexity = O(1)?
 
+
+
+
+// Problem-2: How to implement the min() function when using stack with Time Complexity = O(1)?
+// Solution: Use two stacks.
