@@ -1,1 +1,21 @@
+// Reverse a Linked List by using recursion.
+// Solution: Boll down to large problem -> smallest problems.
+// Base Case: (head == null || head.next == null)
+// Recursion Rule: current.next.next = current; current.next = null.
 
+// Implementation in Java.
+
+public class ReverseLinkedListByRecursion {
+    public ListNode reverseLinkedList(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode newHead = reverseLinkedList(head.next);
+
+        head.next.next = head;
+        head.next = null;
+
+        return newHead;
+    }
+}
