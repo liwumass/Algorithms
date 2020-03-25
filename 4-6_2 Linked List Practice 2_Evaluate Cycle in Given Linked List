@@ -1,0 +1,7 @@
+// Problem2: Evaluate if there is a cycle in given Linked List.
+// Solution: For a non-null Linked List, if there is a cycle in it, two pointers (slow and fast) will point to the same node.
+// Step1: Evaluate if given Linked List is null.
+// Step2: Create two new fields: slow and fast to traverse given Linked List.
+// Step3: If slow and fast point to the same node, return true; else, return false.
+// Time Complexity: O(n).
+// Space Complexity: O(1).
