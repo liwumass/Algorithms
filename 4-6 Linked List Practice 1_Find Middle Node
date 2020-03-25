@@ -5,6 +5,7 @@
 //        If the fast runs to the end of the Linked List, slow runs to half of the Linked List.
 // Time Complexity: O(n).
 // Space Complexity: O(1).
+// Tips: Be aware of the control of head node. Tail is not always essential except append elements in the Linked List.
 
 // Implementation in Java.
 
