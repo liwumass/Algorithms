@@ -1,0 +1,7 @@
+// Problem3: How to insert a node in a sorted Linked List?
+// Solution: Traverse given Linked List.
+// Step1: Evaluate if the linked list is null. 
+// Step2: If null, creat a dummy node. If not null, traverse the Linked List and compare the value of inserted node and the value of head.
+// Step3: If the value of inserted value is less than the value of the value of head in Linked List, create a dummy node.
+// Time Complexity: O(n).
+// Space Complexity: O(1).
