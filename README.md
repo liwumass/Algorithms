@@ -15,7 +15,7 @@
 
 - Linked List
   - 4-1 Linked List
-  - 4-2 ListNode
+  - 4-2 List Node
   - 4-3 LinkedList VS. ArrayList
   - 4-4 Reverse a LinkedList_By Itetation
   - 4-5 Reverse a LinkedList_By Recursion
