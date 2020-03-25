@@ -1,1 +1,5 @@
+// Reverse a LinkedList by iteration. From the first node (head) to the last node (tail) do iteration.
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 
+// Implementation in Java.
