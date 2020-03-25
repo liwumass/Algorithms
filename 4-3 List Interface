@@ -1,1 +1,29 @@
+// Interface: In object oriented programming language, the term interface is used to define an abstract type that contains no data 
+// but defines behaviours as method signatures. (https://en.wikipedia.org/wiki/Interface_(computing))
+// Example: Implement interface Dictionary in Java.
 
+public class InterfaceDictionary {
+    public interface Dictionary {
+        int get(int index);
+    }
+
+    class DictionaryImplementation implements Dictionary {
+        public int get(int index) {
+            return 0;
+        }
+    }
+
+    public int search(Dictionary dict, int target) {
+        return dict.get(target);
+    }
+
+    interface A {
+        public void print();
+    }
+
+    class B implements A {
+        public void print() {
+            System.out.println("B");
+        }
+    }
+}
