@@ -1,0 +1,14 @@
+// ArrayList VS. LinkedList
+// 1. Memory Layout
+// - ArrayList: physically consecutive allocated memory space; no overhead.
+     Overhead: any combination of excess or indirect computation time, memory, bandwidth or other resources that are required to implement a specific task. (https://en.wikipedia.org/wiki/Overhead_(computing))
+// - LinkedList: pysically non-consecutive allocated memory space. Overhead of multiple objects with the "next".
+// 2. Random Access Time:
+// - ArrayList: O(1)
+// - LinkedList: O(n) as a result of traversing each node.
+// 3. SearchTime in a Non-Sorted List:
+// - ArrayList: O(n)
+// - LinkedList: O(n)
+// 4. SearchTime in a Sorted List:
+// - ArrayList: O(log(n))
+// - LinkedList: O(n) as a result of traversing each node.
