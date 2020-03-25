@@ -1,1 +1,7 @@
-
+// Problem 4: Merge two sorted Linked List into one long Linked List (size: n).
+// Solution: Create a empty Linked List to store the values in these two Linked List.
+// Step1: Create a dummy node.
+// Step2: Evaluate if the two sorted Linked List are null.
+// Step3: If not null, compare current.1 with current.2. And then append the smaller one behind dummy node.
+// Time Complexity: O(n)
+// Space Complexity: O(n)
