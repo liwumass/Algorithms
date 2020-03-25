@@ -32,6 +32,29 @@ public class LinkedListGetIndex {
 
 // Implement appendHead() in Java.
 
+public class LinkedListAppendHead {
+    public ListNode appendHead(ListNode head, int value) {
+        ListNode newHead = new ListNode(value);
+        newHead.next = head;
+        return newHead;
+    }
+}
 
 
 // Implement appendTail() in Java.
+
+public class LinkedListAppendTail {
+    public ListNode appendTail(ListNode head, int value) {
+        if (head == null) {
+            return new ListNode(value);
+        }
+
+        ListNode previous = head;
+        while (previous.next != null) {
+            previous = previous.next;
+        }
+
+        previous.next = new ListNode(value);
+        return head;
+    }
+}
