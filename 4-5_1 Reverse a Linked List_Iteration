@@ -3,3 +3,22 @@
 // Space Complexity: O(1)
 
 // Implementation in Java.
+
+public class ReverseLinkedListByIteration {
+    public ListNode reverseLinkedList(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode previous = null;
+        ListNode current = head;
+
+        while (current != null) {
+            ListNode next = head.next;  // store "next" first. Make sure control "head" in each iteration.
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        return previous;
+    }
+}
