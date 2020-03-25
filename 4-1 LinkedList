@@ -1,2 +1,37 @@
 // LinkedList: LinkedList is an abstract linear data structure. Each ListNode contains name, value and reference to next node.
 // In a LinkedList, remember to always be aware where the head is to make sure we can traverse any node/element in the list by iterating the 'next' reference.
+
+// Common operations in a LinkedList: length(); get(index); appendHead(); appendTail().
+
+// Implement length() in Java.
+
+public class LinkedListLength {
+    public int length(ListNode head) {
+        int length = 0;
+        while (head != null) {
+            length++;
+            head = head.next;
+        }
+        return length;
+    }
+}
+
+
+// Implement get(index) in Java.
+
+public class LinkedListGetIndex {
+    public ListNode get(ListNode head, int index) {
+        while (index > 0 && head != null) {
+            head = head.next;
+            index--;
+        }
+        return head;
+    }
+}
+
+
+// Implement appendHead() in Java.
+
+
+
+// Implement appendTail() in Java.
