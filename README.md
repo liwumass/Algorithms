@@ -20,5 +20,6 @@
   - 4-4 LinkedList VS. ArrayList
   - 4-5_1 Reverse a LinkedList_By Itetation
   - 4-5_2 Reverse a LinkedList_By Recursion
+  - 4-6 LinkedList Practices
 
 
