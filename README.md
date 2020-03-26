@@ -1,5 +1,7 @@
 # Algorithms
 ## Algorithms & Data Structures
+### Linear Data Structures
+
 - Array
   - 1-1. Selection Sort
   - 1-2. Merge Sort
@@ -21,6 +23,8 @@
   - 4-5_1 Reverse a LinkedList_By Itetation
   - 4-5_2 Reverse a LinkedList_By Recursion
   - 4-6 LinkedList Practices
+  
+### Non-Linear Data Structures
 
 - Tree
 
