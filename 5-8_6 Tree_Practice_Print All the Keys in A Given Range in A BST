@@ -1,0 +1,8 @@
+// Problem 6: Given a BST and two values k1 and k2 (where k1 < k2). Print all the keys of the BST in range [k1, k2] in an increasing order.
+// Hint: (1) A BST is a In-Oder Traversal (in an increasong order) binary tree.
+//       (2) Compare k1 with root.value && compare root.value with k2.
+//       (3) If (k1 >= root.value), only consider right-subtree.
+//       (4) If (k2 <= root.value), only consider left-subtree.
+// Time Complexity:
+// Space Complexity:
+// Implementation in Java.
