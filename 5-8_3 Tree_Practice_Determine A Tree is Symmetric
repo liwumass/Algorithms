@@ -1,0 +1,9 @@
+// Problem 3: How to evaluate if a binary tree is symmetric.
+// Symmetric: In a symmetric binary tree, for each pair of nodes in left-subtree and right-subtree, the values are equal to each other
+// (leftLeft == rightRight && leftRight == ightLeft)
+
+// Base Case: (1) leftRoot == null && rightRoot == null;
+//            (2) leftRoot == null || rightRoot == null;
+//            (3) leftRoot.value != rightRoot.value;
+// Recursive Rule: if (leftLeft == rightRight && leftRight == ightLeft) return true; else return false.
+// Implementation in Java.
