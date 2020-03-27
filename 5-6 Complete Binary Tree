@@ -1,0 +1,2 @@
+// Complete Binary Tree: In a bianry tree, every layer (probably except the last layer) is completely filled, and all the non-null nodes are as far left as possible.
+// Complete Binary Tree is used to construct another data structure --- Heap.
