@@ -1,0 +1,6 @@
+// Binary Search Tree (BST): an In-Order traversal tree. max(leftSubtree) < root.value < min(rightSubtree)
+// Problem 5: How to evaluate if a binary tree is a BST?
+// Solution: a boolean method.
+// Base Case: root == null.
+// Recursive Rule: isBST(leftSubtree) && isBST(rightSubtree)
+
