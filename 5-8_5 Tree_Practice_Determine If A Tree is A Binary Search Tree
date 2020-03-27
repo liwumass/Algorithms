@@ -3,4 +3,21 @@
 // Solution: a boolean method.
 // Base Case: root == null.
 // Recursive Rule: isBST(leftSubtree) && isBST(rightSubtree)
+// TIme Complexity: worst case---n nodes in n layers. O(n^2).
+// Space Complexity: O(height). worst case---n nodes in n layers. O(n).
 
+// Implementation in Java.
+
+public class TreeIsBinarySearchTree {
+    public boolean isBST(TreeNode root, int min, int max) {
+        if (root == null) {
+            return true;
+        }
+
+        if (min >= root.value || max <= root.value) {
+            return false;
+        }
+
+        return isBST(root.left, min, root.value) && isBST(root.right, root.value, max);
+    }
+}
