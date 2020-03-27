@@ -27,7 +27,20 @@
 ### Non-Linear Data Structures
 
 - Tree
-
+  - 5-1 Binary Tree
+  - 5-2 Tree Node
+  - 5-3 Tree Traversal
+  - 5-4 Balanced Binary Tree
+  - 5-5 Perfect Binary Tree
+  - 5-6 Complete Binary Tree
+  - 5-7 Binary Search Tree (BST)
+  - 5-8_1 Tree_Practice_Get Tree's Height
+  - 5-8_2 Tree_Practice_Determine If a Tree is a Balanced Binary Tree.
+  - 5-8_3 Tree_Practice_Determine if a Tree is Symmetric.
+  - 5-8_4 Tree_Practice_Determine if a Tree is Identical.
+  - 5-8_5 Tree_Practice_Determine if a Tree is a BST.
+  - 5-8_6 Tree_Practice_Print BST Keys in Given Range.
+  
 - Heap
 
 - Hash Table
