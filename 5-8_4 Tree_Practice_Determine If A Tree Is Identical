@@ -1,0 +1,12 @@
+// Problem 4: In a binary tree, tweak the leftChild with rightChild of an arbitrary node in a binary tree and the "structure" of the tree are NOT changed.
+// How to determine if these two binary trees' structures are identical or not.
+// Hints: (1) the structure does not change means the number of nodes in left-subtree is the same as the number of nodes in right-subtree.
+//        (2) Identical: means in these two subtrees:
+//            - (root1.left == root2.left && root1.right == root2.right) || (root1.left == root2.right && root1.right == root2.left)
+// Solution: a boolean method; input two subtrees; BaseCase + RecursionRule.
+// Base Case: (1) root1 == null && root2 == null; return true;
+//            (2) root1 == null || root2 == null; return false;
+//            (3) root1.value != root2.value; return false;
+// Time Complexity: O(1 + 4 + 4*4 + 16 * 4 + ...... + 4^(log_2(n))) = O(n^2)
+// Space Complexity: O(height).
+// Implementation in Java.
