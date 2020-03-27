@@ -24,6 +24,8 @@ public class TreeIfBanlancedBinaryTree {
         else {
             return false;
         }
+        
+        return isBBT(root.left) && isBBT(root.right);   //Recursive rule.
     }
 
     public int getHeight(TreeNode root) {
