@@ -1,6 +1,18 @@
 // Tree Traversal: is known as Tree Search. Each node in the tree is visited only once.
-// Pre-order Traversal: current node is supposed to be visited in each recursion step. (currentNode-->leftChild-->rightChild).
-// In-order Traverdal: current node is supposed to be visited in the middle. (leftChild-->currentNode-->rightChild).
-// Post-order Traversal: current node is supposed to be visited after visiting leftChild and rightChild. (leftChild-->rightChild-->currentNode).
+// Pre-Order Traversal: current node is supposed to be visited in each recursion step. (currentNode-->leftChild-->rightChild).
+// In-Order Traverdal: current node is supposed to be visited in the middle. (leftChild-->currentNode-->rightChild).
+// Post-Order Traversal: current node is supposed to be visited after visiting leftChild and rightChild. (leftChild-->rightChild-->currentNode).
 
+// Pre-Order Traversal: Implementation in Java.
 
+public class TreePreOrderTraversal {
+    public TreeNode preOrder(TreeNode root) {
+        if (root == null) {
+            return root;
+        }
+        System.out.println(root.value);
+        preOrder(root.left);
+        preOrder(root.right);
+        return root;
+    }
+}
