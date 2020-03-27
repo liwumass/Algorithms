@@ -10,7 +10,7 @@
 
 // Implementation in Java - Solution 1.
 // Time Complexity: O(n * height)
-// Space Complexity: O(height)
+// Space Complexity: O(height). Worset case: O(n) <-- there are n nodes and n layers.
 
 public class TreeIfBanlancedBinaryTree {
     public boolean isBBT(TreeNode root) {
