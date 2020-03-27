@@ -1,0 +1,4 @@
+// Binary Search Tree: Recursively, in a binary tree, for every node, 
+// the vlaues of nodes in left subtree is less than (NOT equal to) the value of the root, 
+// and the value of root is less than the values of nodes in right subtree.
+// Binary Search Tree (BST) is a sorted tree. In-Order Traversal.
