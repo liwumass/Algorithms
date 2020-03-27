@@ -6,4 +6,24 @@
 //            (2) leftRoot == null || rightRoot == null;
 //            (3) leftRoot.value != rightRoot.value;
 // Recursive Rule: if (leftLeft == rightRight && leftRight == ightLeft) return true; else return false.
+// Time Complexity: O(n/2)-->O(n).
+// Space Complexity: O(height).
+
 // Implementation in Java.
+
+public class BinaryTreeSymmetric {
+    public boolean isSymmetric(TreeNode root1, TreeNode root2) {
+        if (root1 == null && root2 == null) {
+            return true;
+        }
+
+        else if (root1 == null || root2 == null) {
+            return false;
+        }
+
+        else if (root1.value != root2.value) {
+            return false;
+        }
+        return isSymmetric(root1.left, root2.right) && isSymmetric(root1.right, root2.left);
+    }
+}
