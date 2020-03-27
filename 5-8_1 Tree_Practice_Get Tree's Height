@@ -5,6 +5,9 @@
 // Step3: Call Math.max(leftHeight, rightHeight) + 1 = Tree's height.
 // Time Complexity: the time cost of traversing every node in the recursion process. O(n)
 // Space Complexity: extra memory used to implement instructions in the program. O(tree's height). Worset case: n nodes-->n layers.
+// Take away 1: Be careful it is a recursion process for every node in the tree. 
+// Take away 2: For every node in the tree, 1 + Math.max(getHeight(root.left), getHeight(root.right)) is implemented with costing O(1).
+// Take away 3: Keep in mind for every node, we do the same thing! --> It is the reason we call it a recursive process.
 
 // Implementation in Java.
 
