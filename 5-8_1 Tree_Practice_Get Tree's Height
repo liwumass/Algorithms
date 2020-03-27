@@ -1,0 +1,19 @@
+// Problem 1: How to get a tree's height?
+// Soluction: a tree's height is equal to the number of its layers.
+// Step1: Evaluate if the root is null.
+// Step2: Call getHeight() to get the height of left-subtree and the height of right-subtree.
+// Step3: Call Math.max(leftHeight, rightHeight) + 1 = Tree's height.
+// Time Complexity: the time cost of traversing every node in the recursion process. O(n)
+// Space Complexity: extra memory used to implement instructions in the program. O(tree's height). Worset case: n nodes-->n layers.
+
+// Implementation in Java.
+
+public class TreeGetHeight {
+    public int getHeight(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        return 1 + Math.max(getHeight(root.left), getHeight(root.right));
+    }
+}
