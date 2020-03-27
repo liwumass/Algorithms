@@ -8,3 +8,29 @@
 //        the tree is a Balanced Binary Tree. If not, the tree is NOT a Balanced Binary Tree.
 // Keep in mind: it is a recursive process. Remeber the recursion rule is appropriate for every node.
 
+// Implementation in Java - Solution 1.
+// Time Complexity: O(n * height)
+// Space Complexity: O(height)
+
+public class TreeIfBanlancedBinaryTree {
+    public boolean isBBT(TreeNode root) {
+        if (root == null) {             // BaseCase in a tree: the value of each node in last layer is null.
+            return true;
+        }
+
+        if (Math.abs(getHeight(root.left) - getHeight(root.right)) <= 1) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public int getHeight(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        return 1 + Math.max(getHeight(root.left), getHeight(root.right));
+    }
+}
