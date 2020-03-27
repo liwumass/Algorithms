@@ -3,6 +3,26 @@
 //       (2) Compare k1 with root.value && compare root.value with k2.
 //       (3) If (k1 >= root.value), only consider right-subtree.
 //       (4) If (k2 <= root.value), only consider left-subtree.
-// Time Complexity:
+// Time Complexity: 
 // Space Complexity:
 // Implementation in Java.
+
+public class TreePrintKeysInRangeInBST {
+    public void inOrder(TreeNode root, int k1, int k2) {
+        if (root == null) {
+            return;
+        }
+
+        if (root.value > k1) {
+            inOrder(root.left, k1, k2);
+        }
+
+        if (root.value >= k1 && root.value <= k2) {
+            System.out.println(root.value + " ");
+        }
+
+        if (root.value < k2) {
+            inOrder(root.right, k1, k2);
+        }
+    }
+}
