@@ -1,0 +1,3 @@
+// Tree: In computer science, a tree is an Abstract Data Type (ADT) that simulates a hierarchical tree structure. (https://en.wikipedia.org/wiki/Tree_(data_structure))
+// Tree: There is only one source node in a tree.
+// Binary Tree: In a tree, for every node, there are at most two childeren-nodes. (a recursive definition)
