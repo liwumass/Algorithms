@@ -1,1 +1,10 @@
+// Problem 2: How to determine if a binary tree is a balanced binary tree.
+// Balanced Bianry Tree: is a binary tree that for every node in the tree, 
+// the difference between the height of left-subtree and the height of right-subtree is less than or equal to 1.
+// Solution: a Boolean method.
+// Step1: Evaluate if the root of this tree is null.
+// Step2: If not null, for every node, call getHeight(root.left) and getHeight(root.right) to get the heights of left-subtree and right-subtree.
+// Step3: If the difference between the height of left-subtree and the height of right-subtree is less than or equal to 1,
+//        the tree is a Balanced Binary Tree. If not, the tree is NOT a Balanced Binary Tree.
+// Keep in mind: it is a recursive process. Remeber the recursion rule is appropriate for every node.
 
