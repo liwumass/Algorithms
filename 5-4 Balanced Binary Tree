@@ -1,1 +1,1 @@
-// Balanced Binary Tree: In a tree, for every node, the difference between the height of left subtree and the height of right subtree is less or equal to 1.
+// Balanced Binary Tree: In a binary tree, for every node, the difference between the height of left subtree and the height of right subtree is less or equal to 1.
