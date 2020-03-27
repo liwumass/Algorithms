@@ -1,1 +1,6 @@
+// Tree Traversal: is known as Tree Search. Each node in the tree is visited only once.
+// Pre-order Traversal: current node is supposed to be visited in each recursion step. (currentNode-->leftChild-->rightChild).
+// In-order Traverdal: current node is supposed to be visited in the middle. (leftChild-->currentNode-->rightChild).
+// Post-order Traversal: current node is supposed to be visited after visiting leftChild and rightChild. (leftChild-->rightChild-->currentNode).
+
 
