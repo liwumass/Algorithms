@@ -42,9 +42,9 @@
   - 5-8_6 Tree_Practice_Print BST Keys in Given Range.
   
 - Heap
-  - Heap
-  - Graph Search Algorithm (BFS)
-  - Graph Search Algorithm (DFS)
+  - 6-1 Heap
+  - 6-2 Graph Search Algorithm (BFS)
+  - 6-3 Graph Search Algorithm (DFS)
 
 - Hash Table
 
