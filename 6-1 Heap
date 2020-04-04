@@ -1,1 +1,3 @@
-
+// Heap: a data structure, using PriorityQueue. 
+// Heap is constructed by using Complete Binary Tree (every level is fully connected except the last level).
+// 
